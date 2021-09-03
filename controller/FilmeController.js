@@ -2,23 +2,6 @@ const axios = require('axios')
 const Filme = require('../Model/Filme')
 
 module.exports = {
-    async create (request, response){
-        let { title, director, release_date, rt_score, people, description,  species, image } = request.body
-
-            filme = await Filme.create({
-                title,
-                director,
-                release_date,
-                rt_score,
-                people,
-                description,
-                species,
-                image 
-            })
-            console.log('POST /filme Filme.create', request.body)
-        return response.json(filme)
-    },
-
     async show (request, response){
         Filme.findById(request.params._id)
         .then(idFound => {
@@ -27,12 +10,6 @@ module.exports = {
         })
         .catch(err => next(err)); 
         console.log('GET /filme/:id Filme.show', request.params)
-    },
-
-    async index (request,  response){
-        const filme = await Filme.find();
-        console.log('GET /filme Filme.index')
-        return response.json(filme);
     },
 
     async update (req, response){

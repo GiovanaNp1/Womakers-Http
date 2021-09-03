@@ -2,9 +2,6 @@ const { Router } = require('express')
 const routes = Router();
 const FilmeController = require('./controller/FilmeController')
 
-
- routes.get('/filme', FilmeController.index);
- routes.post('/filme', FilmeController.create);
  routes.put('/filme', FilmeController.update);
  routes.get('/filme/:_id', FilmeController.show);
  routes.patch('/filme/update/:id', FilmeController.updatePatch)

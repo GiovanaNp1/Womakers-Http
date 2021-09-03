@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "4b3f3ff3-9b40-4a48-a249-1dafd89155d8",
+		"name": "StudioGhilbi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get filme",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"_id\": \"612f8d428865fba7ca7786a2\",\n    \"title\": \"Castle in the Sky\",\n    \"original_title\": \"天空の城ラピュタ\",\n    \"original_title_romanised\": \"Tenkū no shiro Rapyuta\",\n    \"description\": \"The orphan Sheeta inherited a mysterious crystal that links her to the mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to use Laputa's science to make himself ruler of the world.\",\n    \"director\": \"Hayao Miyazaki\",\n    \"producer\": \"Isao Takahata\",\n    \"release_date\": \"1986\",\n    \"running_time\": \"124\",\n    \"rt_score\": \"96\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/filme",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"filme"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Filme",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/filme/612f8d428865fba7ca7786a2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"filme",
+						"612f8d428865fba7ca7786a2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Filme",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"2baf70d1-42bb-4437-b551-e5fed5a87abe\",\n    \"title\": \"Castle in the Sky\",\n    \"original_title\": \"天空の城ラピュタ\",\n    \"original_title_romanised\": \"Tenkū no shiro Rapyuta\",\n    \"description\": \"The orphan Sheeta inherited a mysterious crystal that links her to the mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to use Laputa's science to make himself ruler of the world.\",\n    \"director\": \"Hayao Miyazaki\",\n    \"producer\": \"Isao Takahata\",\n    \"release_date\": \"1986\",\n    \"running_time\": \"124\",\n    \"rt_score\": \"95\",\n    \"people\": [\n        \"https://ghibliapi.herokuapp.com/people/\"\n    ],\n    \"species\": [\n        \"https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2\"\n    ],\n    \"locations\": [\n        \"https://ghibliapi.herokuapp.com/locations/\"\n    ],\n    \"vehicles\": [\n        \"https://ghibliapi.herokuapp.com/vehicles/\"\n    ],\n    \"url\": \"https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe\"\n},",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Put Filme",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"2baf70d1-42bb-4437-b551-e5fed5a87abe\",\n    \"title\": \"Castle in the Sky\",\n    \"original_title\": \"天空の城ラピュタ\",\n    \"original_title_romanised\": \"Tenkū no shiro Rapyuta\",\n    \"description\": \"The orphan Sheeta inherited a mysterious crystal that links her to the mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to use Laputa's science to make himself ruler of the world.\",\n    \"director\": \"Hayao Miyazaki\",\n    \"producer\": \"Isao Takahata\",\n    \"release_date\": \"1986\",\n    \"running_time\": \"124\",\n    \"rt_score\": \"95\",\n    \"people\": [\n        \"https://ghibliapi.herokuapp.com/people/\"\n    ],\n    \"species\": [\n        \"https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2\"\n    ],\n    \"locations\": [\n        \"https://ghibliapi.herokuapp.com/locations/\"\n    ],\n    \"vehicles\": [\n        \"https://ghibliapi.herokuapp.com/vehicles/\"\n    ],\n    \"url\": \"https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Patch Filme",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"_id\": \"612f9a0cae032a2d2c6bd903\",\n    \"rt_score\": \"96\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/filme/update/612f9a0cae032a2d2c6bd903",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"filme",
+						"update",
+						"612f9a0cae032a2d2c6bd903"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Novo Usuario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
